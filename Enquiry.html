@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - Nyuku Everywhere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="enquiry-page">
+    <!-- Header with Logo & Nav -->
+    <header>
+        <img src="./assests/nyuku.png" alt="img"width="100"height="100";>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="enquiry.html">Enquiry</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <body style="background-image: url(./assests/Hoodie.png);background-size: cover;">
+    <!-- Enquiry Section -->
+    <section class="enquiry">
+        <h1>Send Us an Enquiry</h1>
+        <p>If you have questions about our products or want more information, please fill out the form below:</p>
+
+        <div class="enquiry-form-container">
+            <form>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="interest">I am interested in:</label>
+                <select id="interest" name="interest">
+                    <option value="mens">Men’s Fashion</option>
+                    <option value="womens">Women’s Fashion</option>
+                    <option value="accessories">Accessories</option>
+                    <option value="all">All Collections</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+                <button type="submit">Send Enquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Nyuku Everywhere. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
