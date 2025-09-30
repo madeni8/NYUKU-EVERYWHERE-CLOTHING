@@ -1,10 +1,35 @@
-.nyuky.img {
-    width: 30px;   /* adjust size */
-    height: 30px;   /* maintain aspect ratio */
-    display: block;
-    margin: 0 auto; /* optional: center horizontally */
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Logo */
+.logo {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #6974e6;
+}
+
+/* Nav */
 .nav-menu {
     list-style: none;
     display: flex;
@@ -15,68 +40,19 @@
 
 .nav-menu li a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 8px 15px;
     background-color: #555;
     border-radius: 5px;
+    transition: 0.3s;
 }
 
 .nav-menu li a:hover {
     background-color: #ff6600;
-    color: #fff; /* ensures text is readable on hover */
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:  flex-start;
-   
-    padding: 10px 20px;
-    background-color: #6974e6;
-}
-
-.banner {
-    text-align: center;
-    margin: 30px 0;
-}
-
-
-
-.registration form {
-    display: flex;
-    flex-direction: column; /* Arrange all inputs vertically */
-    width: 300px; /* Adjust form width */
-    margin: 20px;
-}
-
-.registration label {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.registration input,
-.registration select {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.registration button {
-    margin-top: 15px;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.registration button:hover {
-    background-color: red; /* Optional hover effect */
-}
+/* Registration + Banner */
 .registration-banner {
     display: flex;
     justify-content: space-between;
@@ -84,19 +60,17 @@ header {
     margin: 20px;
 }
 
-/* Form Styling */
 .registration {
-    width: 40%; /* Left column width */
+    width: 40%;
 }
 
 .registration form {
     display: flex;
     flex-direction: column;
-}
-
-.registration label {
-    margin-top: 10px;
-    font-weight: bold;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .registration input,
@@ -109,7 +83,7 @@ header {
 
 .registration button {
     margin-top: 15px;
-    padding: 10px;
+    padding: 12px;
     background-color: black;
     color: white;
     border: none;
@@ -118,76 +92,38 @@ header {
 }
 
 .registration button:hover {
-    background-color: rgba(207, 243, 131, 0.076);
+    background-color: red;
 }
 
-/* Banner Styling */
+/* Banner */
 .banner {
-    width: 55%; /* Right column width */
-    display: flex;
-   
-    align-items: center;
-}
-
-.about h2 {
-    margin-top: 40px;
-    font-size: 2rem;
-    color: #fff;
-}
-
-.team {
+    width: 55%;
     display: flex;
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 20px;
 }
 
-.team-member {
-    text-align: center;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 15px;
+.banner img {
+    width: 100%;
+    max-height: 400px;
     border-radius: 10px;
-    width: 180px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.team-member h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-.team-member img {
-    width: 150px;
-    height: 150px;
-    border-radius: 10px; /* square with rounded corners */
     object-fit: cover;
-    border: 3px solid #fff;
-}
-.vertical-nav ul {
-    list-style: none;  /* remove bullets */
-    padding: 0;
-    margin: 20px 0;    /* space from logo */
 }
 
-.vertical-nav ul li {
-    margin-bottom: 15px;  /* space between buttons */
+/* Backgrounds */
+.contact-page {
+    background-image: url("assets/jackal.png");
+    background-size: cover;
+    background-position: center;
 }
 
-.vertical-nav ul li a {
-    display: block;           /* make the link a block so it looks like a button */
-    text-decoration: none;    
-    background-color: #555;   /* button color */
-    color: #fff;              
-    padding: 12px 25px;       /* button padding */
-    border-radius: 8px;       /* rounded corners */
-    font-weight: bold;
-    text-align: center;
-    transition: background-color 0.3s;
+.home-page {
+    background-image: url("assets/T-SHIRT.png");
+    background-size: cover;
+    background-position: center;
+}
+.logo {
+    width: 20%;       
+    height: auto;
+    max-width: 200px;
 }
 
-.vertical-nav ul li a:hover {
-    background-color: #ff6600;  /* hover effect */
-    color: #fff;
-}
